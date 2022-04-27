@@ -23,7 +23,7 @@ public class Constants {
             "\t\t\t\t\t\t\t\t\t\t目前所有的payload均为互联网公开，我只是个搬运工，感谢各位师傅\r\n\t\t\t\r\n\r\n";
 
     public static String UPDATEINFO =
-            "Bug反馈:  扫码加我微信\r\n\r\n" +
+            "Bug反馈:  https://github.com/fullstackcainiao/Exp-JavaFX\r\n\r\n" +
             "原项目为神机V1.9 地址https://github.com/yhy0/ExpDemo-JavaFX \r\n" ;
 
 
