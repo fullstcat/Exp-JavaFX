@@ -3,7 +3,6 @@ package fun.fireline.exp.oracle.weblogic;
 import fun.fireline.core.ExploitInterface;
 import fun.fireline.tools.HttpTools;
 import fun.fireline.tools.Response;
-import fun.fireline.tools.Tools;
 
 import java.util.HashMap;
 

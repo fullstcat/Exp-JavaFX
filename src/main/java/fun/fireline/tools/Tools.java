@@ -190,6 +190,8 @@ public class Tools {
             ei = new S2_046();
         } else if(vulName.contains("S2-DevMode")) {
             ei = new S2_DevMode();
+        } else if (vulName.contains("S2-062")) {
+            ei = new S2_062();
 
 
         } else if(vulName.contains("ThinkPHP 2.x")){
@@ -311,6 +313,24 @@ public class Tools {
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(content);
         String result = m.replaceAll(newString);
+        return result;
+    }
+
+    /**
+     * 获取指定HTML标签的指定属性的值
+     * @param source 要匹配的源文本
+     * @param element 标签名称
+     * @param attr 标签的属性名称
+     * @return 属性值列表
+     */
+    public static List<String> match(String source, String element, String attr) {
+        List<String> result = new ArrayList<String>();
+        String reg = "<" + element + "[^<>]*?\\s" + attr + "=['\"]?(.*?)['\"]?(\\s.*?)?>";
+        Matcher m = Pattern.compile(reg).matcher(source);
+        while (m.find()) {
+            String r = m.group(1);
+            result.add(r);
+        }
         return result;
     }
 

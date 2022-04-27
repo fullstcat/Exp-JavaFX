@@ -58,7 +58,8 @@ public class Struts2Controller extends MainController{
             "\ts2-032: \t启用动态方法调用时，可以通过 method: 前缀执行远程代码执行   https://cwiki.apache.org/confluence/display/WW/S2-032 \r\n" +
             "\ts2-045: \t基于 Jakarta Multipart 解析器执行文件上传时可能的远程代码执行   https://cwiki.apache.org/confluence/display/WW/S2-045 \r\n" +
             "\ts2-046: \t基于 Jakarta Multipart 解析器执行文件上传时可能的 RCE（类似于 S2-045）   https://cwiki.apache.org/confluence/display/WW/S2-046 \r\n" +
-            "\ts2-devMode: \t当Struts2开启devMode模式时，将导致严重远程代码执行漏洞 \r\n\r\n\r\n" +
+            "\ts2-devMode: \t当Struts2开启devMode模式时，将导致严重远程代码执行漏洞 \r\n" +
+            "\ts2-062: \t 适用s2-057 s2-061 s2-062 传入参数为id 局限性大，不适用vulfocus的062靶机（可自行更改传参为name） https://cwiki.apache.org/confluence/display/WW/S2-062 \r\n\r\n" +
 
             Constants.UPDATEINFO;
 
@@ -72,6 +73,7 @@ public class Struts2Controller extends MainController{
             "S2-045",
             "S2-046",
             "S2-DevMode",
+            "S2-062"
     };
 
 
@@ -218,7 +220,7 @@ public class Struts2Controller extends MainController{
             }
 
         } catch (Exception var4) {
-            this.cmd_info.setText("请先进行漏洞检测，确认漏洞存在\r\n");
+            this.cmd_info.setText("命令执行异常，请手动测试\r\n");
             this.cmd_info.appendText("error: " + var4.toString());
         }
         history.put("Struts2_cmd_info", this.cmd_info.getText());

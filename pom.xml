@@ -9,10 +9,6 @@
     <packaging>jar</packaging>
     <version>1.9</version>
 
-    <name>ExpDemo-JavaFX</name>
-    <!-- FIXME change it to the project's website -->
-    <url>https://github.com/yhy0/ExpDemo-JavaFX</url>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -63,7 +59,7 @@
                         <!-- 桌面图标 -->
                         <needShortcut>true</needShortcut>
                         <!-- 公司名称 -->
-                        <vendor>yhy</vendor>
+                        <vendor>fullstackcainiao</vendor>
                         <needShortcut>true</needShortcut><!-- 需要生成快捷方式-->
                         <bundleArguments>
                             <installdirChooser>true</installdirChooser><!-- 指示用户是否可以选择应用程序安装目录的标志 -->
@@ -90,7 +86,7 @@
                         </descriptorRefs>
                         <!-- MainClass in mainfest make a executable jar -->
                         <!-- 运行文件名 -->
-                        <finalName>神机</finalName>
+                        <finalName>蓝猫</finalName>
                     </configuration>
                     <executions>
                         <execution>

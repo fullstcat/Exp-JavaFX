@@ -69,7 +69,7 @@
                               <Font size="15.0" />
                            </font>
                         </Text>
-                        <JFXButton fx:id="execute" layoutX="861.0" layoutY="4.0" onAction="#get_execute_cmd" prefHeight="21.0" prefWidth="66.0" text="执行" />
+                        <JFXButton fx:id="execute" layoutX="867.0" layoutY="-3.0" onAction="#get_execute_cmd" prefHeight="21.0" prefWidth="66.0" text="执行" />
                      </children>
                   </AnchorPane>
                </content>

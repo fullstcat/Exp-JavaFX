@@ -241,7 +241,7 @@ public class MainController  {
 
         this.yhy.setOnAction((e) -> {
             try {
-                Desktop.getDesktop().browse(new URL("https://github.com/yhy0").toURI());
+                Desktop.getDesktop().browse(new URL("https://github.com/fullstackcainiao").toURI());
             } catch (Exception e1) {
                 logger.debug(e1);
             }

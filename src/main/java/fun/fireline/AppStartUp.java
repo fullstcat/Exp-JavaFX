@@ -20,7 +20,7 @@ public class AppStartUp extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/Main.fxml"));
-        primaryStage.setTitle("神机");
+        primaryStage.setTitle("蓝猫");
         primaryStage.setScene(new Scene(root));
         // 退出程序的时候，子线程也一起退出
         primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
